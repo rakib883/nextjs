@@ -20,7 +20,7 @@ const Header = () => {
                         </div>
                         <div className="menu-area flex gap-4">
                             {
-                                navber.map(items =>
+                                navber.map((items:any)=>
                                       <Link className="text-[15px]" key={items.name} href={items.path}>{items.name}</Link>
                                     )
                             }

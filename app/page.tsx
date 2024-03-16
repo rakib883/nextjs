@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Banner from "./Component/Banner-area/Banner";
 import Sponser from "./Component/Sponser-area/Sponser";
 import Try from "./Component/Try it/Try";

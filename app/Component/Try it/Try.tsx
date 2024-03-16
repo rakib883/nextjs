@@ -48,7 +48,7 @@ const Try = () => {
                   {
                     showdata ? 
                     <div className="botto-area py-4">
-                      <p>Congrats! You've made your first call to JSONPlaceholder. 😃 🎉</p>
+                      <p>Congrats! You &apos; ve made your first call to JSONPlaceholder. 😃 🎉</p>
                    </div> : " "
                     
                   }

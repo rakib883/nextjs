@@ -11,11 +11,11 @@ const Resurce = () => {
         },
         {
             name:"/comments",
-            path:"/comments"
+            path:"http://localhost:3000/api/coments"
         },
         {
             name:"/albums",
-            path:"/albums"
+            path:"http://localhost:3000/api/album"
         },
         {
             name:"/photos",
