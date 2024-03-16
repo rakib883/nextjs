@@ -52,19 +52,19 @@ const routePath =[
     return (
         <div>
             <Container className="py-14">
-                <Title heding="Route"></Title>
+                <Title className="" heding="Route"></Title>
                 <p className="py-4">All HTTP methods are supported. You can use http or https for your requests.</p>
                  <div className="all-routes ml-6 flex gap-6">
                     <div className="method flex flex-col gap-2">
                         {
-                            method.map(items =>
+                            method.map((items:any) =>
                                <p key={items.name}>{items.name}</p>  
                             )
                         }
                     </div>
                     <div className="routes flex flex-col gap-2">
                         {
-                          routePath.map(items =>
+                          routePath.map((items:any) =>
                              <Link href={items.path} key={items.path}>{items.name}</Link>
                             )  
                         }

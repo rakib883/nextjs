@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className="py-6 md:py-0 ">
             <div className="all-content">
-                <Container>
+                <Container className="">
                     <div className="menu-content md:flex justify-between ">
                         <div className="logo-area font-bold">
                             <Logo className=""/>

@@ -7,7 +7,7 @@ const Resurce = () => {
     const apiMenu = [
         {
             name:"/post",
-            path:"http://localhost:8000/post"
+            path:"http://localhost:3000/api/post"
         },
         {
             name:"/comments",
@@ -47,7 +47,7 @@ const Resurce = () => {
                 <div className="resource-body flex gap-10 my-4 ml-6">
                    <div className="lin-area flex flex-col gap-2 underline">
                       {
-                        apiMenu.map(items => 
+                        apiMenu.map((items:any) => 
                             <Link key={items.path} href={items.path}>{items.name}</Link>
                             
                         )
@@ -55,7 +55,7 @@ const Resurce = () => {
                    </div>
                    <div className="name flex flex-col gap-2">
                        {
-                        apiHeader.map(items=>
+                        apiHeader.map((items:any)=>
                             <p key={items.name}>{items.name}</p>
                         )
                        }
