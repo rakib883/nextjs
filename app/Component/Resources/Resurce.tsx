@@ -41,7 +41,7 @@ const Resurce = () => {
     ]
     return (
         <div>
-            <Container>
+            <Container className="">
                 <Title heding="Resources" className=""></Title>
                 <p className="py-2">JSONPlaceholder comes with a set of 6 common resources:</p>
                 <div className="resource-body flex gap-10 my-4 ml-6">
