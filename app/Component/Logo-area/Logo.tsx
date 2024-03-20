@@ -7,7 +7,7 @@ const Logo = ({className}:{
 }) => {
     return (
         <div>
-            <Link className={clsx(`${className} font-bold`)} href="/">Rakib Sheikh sss</Link>
+            <Link className={clsx(`${className} font-bold`)} href="/">Rakib Sheikh sssbbbbbbbbb</Link>
         </div>
     );
 };
