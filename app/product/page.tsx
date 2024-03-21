@@ -28,8 +28,8 @@ const Page = async () => {
             <div className="mx-4 grid grid-cols-2 md:grid-cols-5 gap-6 cursor-pointer ">
             
               {
-                postData?.data?.map((item:any)=>(
-                  <div key={item?.id} className="main border group">
+                postData?.data?.map((item:productType)=>(
+                  <div key={item?.id} className="main relative border group">
                       <div className="main-area">
                         <div className="image-area relative overflow-hidden ">
                           <Image  src={images} alt="image" />
@@ -57,14 +57,11 @@ const Page = async () => {
                            </div>
                         </div>
                         <p className="py-4 font-semibold">{item?.title}</p>
-                        <p className="py-2 relative ">
-                           {`${(item?.description).length > 100 ? (item?.description).slice(0, 70) : item?.description }`},
-                           <span className="underline absolute   bottom-2"> 
-                             <p className=" font-semibold cursor-pointer ">See More</p>
-                           </span>
-                        </p>  
+                         <div className="title-area">
+                             <p>{`${item?.description.length > 100 ? item?.description.slice(0,50) : "no datas"}`}</p>
+                         </div>
                       </div>
-                      <div className="prize-area flex  justify-between">
+                      <div className="prize-area flex bottom-0 justify-between">
                         <div className="prize ">
                            <div className="all-items gap-1 flex items-center bg-slate-500 rounded-sm px-2 py-1">
                               <div className="text-white">Order Now</div>
@@ -74,9 +71,7 @@ const Page = async () => {
                            </div>
                         </div>
                         <div className="prize font-semibold">
-                           {
-                            item.price
-                           } $
+                            {item.price} $
                         </div>
                       </div>
                   </div>

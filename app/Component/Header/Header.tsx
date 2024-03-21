@@ -9,7 +9,6 @@ const Header = () => {
         {name :"Sponsor  this project",path:"sponsor"},      
         {name :"Blog",path:"blog"},   
         {name :"My JSON Server",path:"myjson"}, 
-        {name :"My JSON Server",path:"myjson"}, 
         {name :"PODUCT",path:"/product"},       
     ]
     return (
