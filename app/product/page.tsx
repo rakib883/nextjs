@@ -2,7 +2,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { IoGitCompare } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa6";
 import { MdVisibility } from "react-icons/md";
-
+import {product} from "../type"
 
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -28,7 +28,7 @@ const Page = async () => {
             <div className="mx-4 grid grid-cols-2 md:grid-cols-5 gap-6 cursor-pointer ">
             
               {
-                postData?.data?.map((item:productType)=>(
+                postData?.data?.map((item:product)=>(
                   <div key={item?.id} className="main relative border group">
                       <div className="main-area">
                         <div className="image-area relative overflow-hidden ">
@@ -73,6 +73,7 @@ const Page = async () => {
                         <div className="prize font-semibold">
                             {item.price} $
                         </div>
+                       
                       </div>
                   </div>
                 )
